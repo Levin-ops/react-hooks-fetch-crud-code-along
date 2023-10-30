@@ -53,6 +53,24 @@
       "category": "Dairy",
       "isInCart": false,
       "id": 9
+    },
+    {
+      "name": "maziwa",
+      "category": "Dairy",
+      "isInCart": false,
+      "id": 10
+    },
+    {
+      "name": "maziwa",
+      "category": "Dairy",
+      "isInCart": false,
+      "id": 11
+    },
+    {
+      "name": "cake",
+      "category": "Dessert",
+      "isInCart": false,
+      "id": 12
     }
   ]
 }

@@ -23,7 +23,7 @@ function ItemForm({onAddItem}) {
       body: JSON.stringify(itemData),
     })
       .then(response => response.json())
-      .then((newItem) => console.log(newItem))
+      .then((newItem) => onAddItem(newItem))
   }
 
   return (
