@@ -10,8 +10,8 @@ function ShoppingList() {
   useEffect(()=> {
     fetch("http://localhost:4000/items")
       .then((response) => response.json())
-      .then((items) => console.log(items))
-  }, [])
+      .then((items) => setItems(items))
+  }, []) // this will display contents from the db.json
 
   function handleUpdateItem(updatedItem){
     // console.log("In ShoppingCart:", updatedItem);
