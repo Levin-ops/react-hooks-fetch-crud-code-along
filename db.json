@@ -63,13 +63,13 @@
     {
       "name": "maziwa",
       "category": "Dairy",
-      "isInCart": false,
+      "isInCart": true,
       "id": 11
     },
     {
       "name": "cake",
       "category": "Dessert",
-      "isInCart": false,
+      "isInCart": true,
       "id": 12
     }
   ]
