@@ -1,11 +1,33 @@
+import { response } from "msw";
 import React, { useState } from "react";
 
 function ItemForm() {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce");
 
+  function handleSubmit(event){
+    event.preventDefault();
+    // console.log("name:", name);
+    // console.log("category:", category);
+    const itemData = {
+      name: name,
+      category: category,
+      isInCart: false,
+    };
+    // console.log(itemData);
+    fetch("http://localhost:4000/items",{
+      method:"POST",
+      headers:{
+        "Content-type":"application/json",
+      },
+      body: JSON.stringify(itemData),
+    })
+      .then(response => response.json())
+      .then((newItem) => console.log(newItem))
+  }
+
   return (
-    <form className="NewItem">
+    <form className="NewItem" onSubmit={handleSubmit}>
       <label>
         Name:
         <input
