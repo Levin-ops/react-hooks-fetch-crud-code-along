@@ -47,6 +47,12 @@
       "category": "Dairy",
       "isInCart": false,
       "id": 8
+    },
+    {
+      "name": "maziwa",
+      "category": "Dairy",
+      "isInCart": false,
+      "id": 9
     }
   ]
 }

@@ -1,7 +1,7 @@
 import { response } from "msw";
 import React, { useState } from "react";
 
-function ItemForm() {
+function ItemForm({onAddItem}) {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce");
 
